@@ -1,0 +1,18 @@
+{% extends "main.html"%}
+
+    {% block pagename %}
+    <h1>{{store_title}}</h1>
+    {% endblock %}
+
+
+    {% block content %}
+    <ul>
+    {% for item in games %}
+        <li>{{ item.title }} - {{ item.description }}. Стоимость: {{item.cost}}$ <button>{{store_buy}}</button></li>
+    {% endfor %}
+    </ul>
+    {% endblock %}
+
+
+
+

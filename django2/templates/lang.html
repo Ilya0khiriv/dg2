@@ -1,0 +1,21 @@
+{% extends "main.html"%}
+
+    {% block pagename %}
+    <h1>{{cart_lang}}</h1>
+    {% endblock %}
+
+
+    {% block content %}
+        <ul>
+        {% for item in universal_langs %}
+            <li>
+
+                <a href="?lang={{ item }}">{{ item }}</a><br>
+
+            </li>
+
+        {% endfor %}
+        </ul>
+    {% endblock %}
+
+

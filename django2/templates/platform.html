@@ -1,0 +1,16 @@
+
+
+
+
+{% extends "main.html"%}
+
+    {% block pagename %}
+    <h1>{{title}}</h1>
+    {% endblock %}
+
+
+    {% block menu %}
+    <a href="/platform" >{{main_link}}</a><br>
+    <a href="/platform/games" >{{store}}</a><br>
+    <a href="/platform/cart" >{{cart}}</a>
+    {% endblock %}

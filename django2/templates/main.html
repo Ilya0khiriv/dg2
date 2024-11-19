@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <title>Django</title>
+
+
+</head>
+<body>
+    {% block pagename %}
+    {% endblock %}
+
+    {% block menu %}
+    <a href="/platform" >{{main_link}}</a><br>
+    <a href="/platform/games" >{{store}}</a><br>
+    <a href="/platform/cart" >{{cart}}</a>
+    {% endblock %}
+
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
